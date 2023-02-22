@@ -11,6 +11,7 @@ If you previously forked the repository, make sure to access the settings and **
 
 *Keys pressed: `ssh cs15lwi23alg@ieng6.ucsd.edu <enter>`*
 ## 🧠 Clone your fork of the [repository](https://github.com/ucsd-cse15l-w23/lab7) from your Github account
+![image](https://user-images.githubusercontent.com/122405896/220777225-255b545d-1a43-400b-b2b5-a271eca607a0.png)
 ![image](https://user-images.githubusercontent.com/122405896/220774720-8f319b5a-04a7-4f17-9f5f-cd373cfd10b0.png)
 
 ## 📋 Run the tests, demonstrating that they fail
