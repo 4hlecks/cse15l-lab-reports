@@ -11,20 +11,31 @@ If you previously forked the repository, make sure to access the settings and **
 
 *Keys pressed: `ssh cs15lwi23alg@ieng6.ucsd.edu <enter>`*
 ## 🧠 Clone your fork of the [repository](https://github.com/ucsd-cse15l-w23/lab7) from your Github account
-![image](https://user-images.githubusercontent.com/122405896/220777225-255b545d-1a43-400b-b2b5-a271eca607a0.png)
-![image](https://user-images.githubusercontent.com/122405896/220774720-8f319b5a-04a7-4f17-9f5f-cd373cfd10b0.png)
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/122405896/221048429-7d848421-5a30-426d-bef0-eb8252da541f.png">
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/122405896/221048580-4201b4e9-e4dc-4cc1-8241-64452dccbfa4.png">
 
-*Keys pressed: `git clone git@github.com:4hlecks/lab7.git <enter>`*
+*Keys pressed: `git clone <command> v <enter>`*
 ## 📋 Run the tests, demonstrating that they fail
-![image](https://user-images.githubusercontent.com/122405896/220774916-a3fa3a92-d7f6-4739-a4e5-0e2201733a2f.png)
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/122405896/221048848-5b3613b4-4997-44e0-8b0f-a708b74bfbb1.png">
 
-*Keys pressed: `ls <enter>, cd l <tab> <enter>`*
+*Keys pressed: `ls <enter>, cd l <tab> <enter>, <command> v <enter>, <command> v <space> <shift> l <tab> <shift> t <tab> <backspace> <enter>`*
 ## 📝 Edit the code file to fix the failing test
 ![image](https://user-images.githubusercontent.com/122405896/220775196-3fd4ad48-d5db-411f-ace1-e5e905b5b7a5.png)
 
+*Keys pressed: `nano <shift> l <tab> .j <tab> <enter>, <control> v <control> v down down down down down down  <right> <right> <right> <right> <right> <right> <right> <right> <right> <right> <right> <right> <backspace> 2 <control> o <enter>, <control> x`*
+
 ## ✅ Run the tests, demonstrating that they now succeed
-![image](https://user-images.githubusercontent.com/122405896/220775455-1e8a15fb-7479-4dd4-a22d-ba96c7872054.png)
+<img width="796" alt="image" src="https://user-images.githubusercontent.com/122405896/221047953-66f2f873-a2e5-469c-a509-6838c9b4bc3f.png">
+
+*Keys pressed: `<up> <up> <up> <enter>, <up> <up> <up> <enter>`*
 
 ## 📨 Commit and push the resulting change to your Github account
-![image](https://user-images.githubusercontent.com/122405896/220775700-facad9cc-4b4c-4e75-b32a-1415d835bc8a.png)
+<img width="593" alt="image" src="https://user-images.githubusercontent.com/122405896/221049473-9ac9c36c-2acd-4882-aa35-b79c6ad8c8f3.png">
 
+*Keys pressed: `git add <shift> l <tab> .j <tab> <enter>, git commit -m "updated" <enter>, git push <enter>`*
+
+## 👑 Done!
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/122405896/221049785-82f3b829-506a-425a-b6a9-8fdaaba4f304.png">
+
+*Screenshot above is from the repository on github.com showing the changes made.*
+I am done! I finished at **01:41:11 seconds**.
