@@ -14,9 +14,11 @@ If you previously forked the repository, make sure to access the settings and **
 ![image](https://user-images.githubusercontent.com/122405896/220777225-255b545d-1a43-400b-b2b5-a271eca607a0.png)
 ![image](https://user-images.githubusercontent.com/122405896/220774720-8f319b5a-04a7-4f17-9f5f-cd373cfd10b0.png)
 
+*Keys pressed: `git clone git@github.com:4hlecks/lab7.git <enter>`*
 ## 📋 Run the tests, demonstrating that they fail
 ![image](https://user-images.githubusercontent.com/122405896/220774916-a3fa3a92-d7f6-4739-a4e5-0e2201733a2f.png)
 
+*Keys pressed: `ls <enter>, cd l <tab> <enter>`*
 ## 📝 Edit the code file to fix the failing test
 ![image](https://user-images.githubusercontent.com/122405896/220775196-3fd4ad48-d5db-411f-ace1-e5e905b5b7a5.png)
 
