@@ -1,17 +1,17 @@
-# The Find Command
+# The Find Command 🔎
 ## Lab Report 5
 Last time in lab report 3, I talked about four ways to use the `grep` command. As my interest grew in command-line interface, I found this as the perfect opportunity to write up another report about a different command, `find`! So here are four ways to use the `find` command.
 
-## Type
+## Type 🗂️
 Ever wanted to search through a directory and filter the results based on the type of file? I present to you, `-type`:
 
 ```bash
-find [path] -type [filetype]
+find [path] -type [fileType]
 ```
 
 This option allows you to search for files or directories of a specific type. For instance, I went into the `written-2/` directory:
 ```bash
-cd skil-demo1-data/written_2/
+cd skill-demo1-data/written_2/
 ```
 I wanted to see all the directories in the `non-fiction/` directory, so I typed:
 ```bash
@@ -50,10 +50,11 @@ non-fiction/OUP/Berk/ch7.txt
 ```
 There is actually quite a lot more files that it gave me, but you sorta get the idea that it lists all the files in the non-fiction/ directory.
 I found this command-line option when searching exactly how the find command works, [here](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/#:~:text=The%20find%20command%20is%20one,action%20on%20each%20matched%20file.)!
-## Modification Time
+
+## Modification Time ⏱️
 Perhaps you wanted to filter files based on when they were created, modified, or accessed depending on a certain time range! I present to you, `-mtime`:
 ```bash
-find [path] -mtime [number of days]
+find [path] -mtime [numDays]
 ```
 This option allows you to search for files based on a specific number of days since they were modified. I went ahead and played around with this using the same `non-fiction/` directory as earlier:
 ```bash
@@ -81,7 +82,7 @@ non-fiction/OUP/Berk/ch7.txt
 ```
 All I did was change the 1 to a 0! Indicating any files that were modified within the past zero days- today! Since I just cloned the repository, all the files are "brand new."
 I found this command-line option when searching for different ways to use find, [here](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)!
-## Size 
+## Size 📏
 Files all have different sizes. You can use the find command to filter based on their size! I present to you: **-size**:
 ```bash
 find [path] -size [-+][size][unit]
@@ -153,13 +154,38 @@ non-fiction/OUP/Rybczynski/ch2.txt
 Now there are a whole lot more files and directories. It is quite interesting, as now we have a way to separate which chunks of a directory are smaller or larger, as the results above are all less than 50 kilobytes.
 I found this command-line option after coming across an article describing how to find the largest files in your linux operating system, [here](https://www.cyberciti.biz/faq/how-do-i-find-the-largest-filesdirectories-on-a-linuxunixbsd-filesystem/)!
 
-## Empty
-Perhaps you have a ton of files that you wanna clean up, but you want to be careful. You can use: **-empty**:
-https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+## Empty 📂
+Perhaps you have a ton of files that you wanna clean up from the command line, but you want to see which files are empty first. You can use: **-empty**:
 ```bash
 find [path] -empty
 ```
-This option allows you to search for empty files or directories.
+This option allows you to search for empty files or directories. I was planning on making some empty folders to test it out before hand, but I wanted to see if there are actually are any empty files or directories first. So I `cd skill-demo1-data` and ran:
 ```bash
-grep -c "Italy" ./written_2/travel_guides/berlitz1/WhereToItaly.txt
+find -empty
 ```
+To my surprise, it gave me:
+```
+./.git/branches
+./.git/refs/tags
+./.git/objects/info
+```
+There actually are already some empty folders that exist in `skill-demo1-data` after all! Now I am going to try making some empty folders from the command line and run the same command again:
+```bash
+mkdir testEmpty
+```
+```bash
+mkdir anotherEmpty
+```
+```bash
+find -empty
+```
+In return gave me:
+```
+./.git/branches
+./.git/refs/tags
+./.git/objects/info
+./testEmpty
+./anotherEmpty
+```
+There you have it, it shows the new folders I created because they are empty!
+I found this command-line option on the same site I found the `-mtime` option, [here](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)!
